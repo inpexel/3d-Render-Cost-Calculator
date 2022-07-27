@@ -4,6 +4,8 @@ const headButtons1 = document.querySelector('.headButtons button:first-of-type')
 const headButtons2 = document.querySelector('.headButtons button:last-of-type');
 
 
-function isBtnActive(button){
-    button.classList = ('.btn-selected') 
+function isBtnActive(on, off){
+    off.style.display = 'none';
+    on.style.display = 'flex';
+    console.log('clicked');
 }

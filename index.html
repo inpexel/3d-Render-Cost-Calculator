@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
     <title>3d Render cost Calculator</title>
   </head>
   <body>
     <div class="container">
       <div class="headButtons">
-        <button class="btn-selected">White Bg</button>
-        <button>Creative</button>
+        <button onclick="isBtnActive(whiteBg, creative)">White Bg</button>
+        <button onclick="isBtnActive(creative, whiteBg)">Creative</button>
       </div>
 
       <div class="type">
         <div class="whiteBg row2flex">
           <div class="calculation">
             <h1>Lorem ipsum dolor sit amet.</h1>
+            <form action="">
+              <fieldset>
+                <legend for="resolution">Select Rsolution</legend>
+                  <input type="radio" name="1080p" id="">
+              </fieldset>
+              <input type="radio" name="1080p" id="">
+            </form>
           </div>
           <div class="imageResult">
             <img
@@ -40,5 +46,7 @@
         </div>
       </div>
     </div>
+
+    <script src="main.js" defer></script>
   </body>
 </html>
